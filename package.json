@@ -1,0 +1,17 @@
+{
+  "name": "hypervisor_chooser",
+  "version": "1.0.0",
+  "description": "returns a hypervisor by checking its memory usage. if more than 2 hypervisors has the same memory consumptions, the script checks their cpu util and returns the less loaded one. if vm name is specified as 2nd argument, it excludes the hypervisors which already contain that vm basename like: rabbitmq01",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Richard Walton",
+  "license": "ISC",
+  "dependencies": {
+    "array.prototype.find": "^1.0.0",
+    "child-process-promise": "^1.1.0",
+    "command-line-args": "^2.1.1",
+    "promise": "^7.0.4"
+  }
+}
